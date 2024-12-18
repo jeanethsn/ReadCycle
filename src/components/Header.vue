@@ -1,6 +1,6 @@
 <template>
 
-    <nav class="relative px-4 py-5 flex justify-between items-center bg-white">
+    <nav class="relative px-4 py-5 flex justify-between items-center bg-[#FBFBFB]">
       <RouterLink to="/">
           <img
             class="w-[60%] md:ml-20"

@@ -1,7 +1,7 @@
 <template>
 
-<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#E3F6F8] py-56 px-5 md:p-[12rem] w-full h-auto gap-5">
-    <h3 class="text-[2rem] text-primary leading-[3rem] font-semibold font-serif md:text-4xl md:p-8 lg:text-6xl lg:p-5" for="keyword">Buscar tu libro</h3>
+<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-72 px-5 md:p-[12rem] w-full h-full gap-5">
+    <h3 class="text-[1.3rem] text-[#EB562B] tracking-[0.5rem] leading-[3rem] font-semibold font-serif md:text-[1.3rem] md:p-8 lg:text-[1.5rem] lg:p-5" for="keyword">BUSCA TU LIBRO</h3>
    <div
         id="buscador_top"
         class="md:flex relative border border-3 border-[#2A9AAA] rounded-full w-[350px] md:w-[500px] ">

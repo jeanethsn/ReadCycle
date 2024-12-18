@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
-        serif: ["Playfair Display", "serif"],
+        sans: ["Open sans", "serif"],
+        serif: ["Open sans", "serif"],
       },
       colors: {
         primary: "#14183E",

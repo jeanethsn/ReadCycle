@@ -1,7 +1,7 @@
 <template>
 
-<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#E3F6F8] py-56 px-5 md:p-[12rem] w-full h-auto gap-5">
-    <label class="text-[2.3rem] text-primary leading-[3rem] font-semibold font-serif md:text-5xl md:p-8 lg:text-6xl lg:p-5" for="keyword">¿Qué libro quieres ofrecer?</label>
+<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-56 px-5 md:p-[12rem] w-full h-auto gap-5">
+    <label class="text-[2.3rem] text-[#EB562B] tracking-[0.5rem] leading-[3rem] font-semibold font-serif md:text-5xl md:p-8 lg:text-[1.5rem] lg:p-5" for="keyword">¿QUÉ LIBRO QUIERES OFRECER?</label>
     <div
         id="buscador_top"
         class="md:flex relative border border-3 border-[#2A9AAA] rounded-full w-[350px] md:w-[500px] ">
