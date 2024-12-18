@@ -2,7 +2,7 @@
   <Slider />
 
   <h3 class="font-serif text-[1.2rem] text-[#EB562B] tracking-[0.5rem] font-bold bg-[#FBFBFB] ">ÚLTIMOS LIBROS AÑADIDOS</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10 bg-[#FBFBFB] ">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10 pl-20 bg-[#FBFBFB] ">
     <BookCard
       v-for="availableBook in availableBooks"
       :key="availableBook.isbn"
