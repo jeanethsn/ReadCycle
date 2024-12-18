@@ -1,8 +1,8 @@
 <template>
   <Slider />
 
-  <h3 class="font-serif text-[1.2rem] text-[#EB562B] tracking-[0.5rem] font-bold mt-14 mb-10">ÚLTIMOS LIBROS AÑADIDOS</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10">
+  <h3 class="font-serif text-[1.2rem] text-[#EB562B] tracking-[0.5rem] font-bold bg-[#FBFBFB] ">ÚLTIMOS LIBROS AÑADIDOS</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10 bg-[#FBFBFB] ">
     <BookCard
       v-for="availableBook in availableBooks"
       :key="availableBook.isbn"
@@ -11,12 +11,12 @@
     
   </div>
 
-  <section class="grid grid-cols-1 text-left md:grid-cols-2 md:px-16 p-8 py-16 md:py-36">
+  <section class="grid grid-cols-1 text-left md:grid-cols-2 md:px-16 p-8 py-16 md:py-36 bg-[#FBFBFB] ">
   <div>
-    <div>
-      <p class="font-semibold text-lg">RECICLA TUS LIBROS</p>
-      <h3 class="font-serif text-3xl md:text-4xl font-semibold">
-        <span class="text-[#4E989F]">Comparte</span> tus libros <br class="hidden md:block">en 3 pasos
+    <div class="flex flex-col gap-[1rem]">
+      <p class="font-bold text-lg text-[#4E989F] tracking-[0.5rem]">RECICLA TUS LIBROS</p>
+      <h3 class="font-serif text-3xl md:text-[1.5rem] font-bold text-[#EB562B] tracking-[0.5rem] uppercase">
+        Compartetus libros <br class="hidden md:block">en 3 pasos
       </h3>
     </div>
     <div class="space-y-8 mt-8 pr-0 md:pr-20">
@@ -52,7 +52,7 @@
     </div>
   </div>
 
-  <img class="self-center mt-16 md:mt-0" src="../images/share-your-books-ilustration.svg" alt="Mujer volando con un libro" />
+  <img class="self-right w-[600px] mt-16 md:mt-0" src="../images/share-your-books-ilustration.svg" alt="Mujer volando con un libro" />
 </section>
 
 </template>

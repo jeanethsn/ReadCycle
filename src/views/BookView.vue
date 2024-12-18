@@ -1,6 +1,6 @@
 <template>
 
-    <div class="grid grid-cols-1 md:grid-cols-[20%_80%] gap-12 p-8 md:p-32 items-center justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-[20%_80%] gap-12 p-8 md:p-32 items-center justify-center bg-[#FBFBFB]">
         <div class="flex justify-center items-center">
             <img :src="book.image" :alt="`portada de ${book.title}`" class="w-[200px] md:w-[400px] ">
         </div>
@@ -15,11 +15,11 @@
                 <span v-if="book.description.length > descriptionLimit">
                     <span v-if="isDescriptionTruncated">
                         {{ truncatedDescription }}
-                        <button @click="toggleDescription" class="text-[#207581] font-semibold">Leer más</button>
+                        <button @click="toggleDescription" class="text-[#4E989F] font-semibold">Leer más</button>
                     </span>
                     <span v-else>
                         {{ book.description }}
-                        <button @click="toggleDescription" class="text-[#207581] font-semibold">Leer menos</button>
+                        <button @click="toggleDescription" class="text-[#4E989F] font-semibold">Leer menos</button>
                     </span>
                 </span>
                 <span v-else>
@@ -46,7 +46,7 @@
                 <p>{{ book.location }}</p>
             </div>
                 </div>
-                    <button v-if="!showInputs" @click="showInputs=true" class="bg-[#207581] rounded-[2rem] text-white py-3 hover:bg-[#115D67] px-5">Lo quiero</button> 
+                    <button v-if="!showInputs" @click="showInputs=true" class="bg-[#4E989F] rounded-[2rem] text-white py-3 hover:bg-[#207581] px-5">Lo quiero</button> 
                     <div v-if="showInputs && !showMsj">
                         <div>
                  <div class="flex flex-col text-left  gap-5 md:flex-row md:justify-center md:items-center w-full">

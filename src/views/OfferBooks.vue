@@ -1,7 +1,7 @@
 <template>
 
-<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-56 px-5 md:p-[12rem] w-full h-auto gap-5">
-    <label class="text-[2.3rem] text-[#EB562B] tracking-[0.5rem] leading-[3rem] font-semibold font-serif md:text-5xl md:p-8 lg:text-[1.5rem] lg:p-5" for="keyword">¿QUÉ LIBRO QUIERES OFRECER?</label>
+<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-[215px] px-5 w-full h-full gap-5">
+  <h3 class="text-[1.3rem] text-[#EB562B] tracking-[0.5rem] leading-[3rem] font-semibold font-serif md:text-[1.3rem] md:p-8 lg:text-[1.5rem] lg:p-5 uppercase" for="keyword">¿Que libro quieres ofrecer?</h3>
     <div
         id="buscador_top"
         class="md:flex relative border border-3 border-[#2A9AAA] rounded-full w-[350px] md:w-[500px] ">
@@ -23,7 +23,7 @@
   
 
   <!-- Información del libro seleccionado -->
-  <div v-if="selectedBook && !saveok" class="flex flex-col justify-center items-center w-full md:flex-row px-5 p-5 md:p-28 gap-5" ref="formContainer">
+  <div v-if="selectedBook && !saveok" class="flex flex-col justify-center items-center w-full md:flex-row px-5 p-5 md:p-28 gap-5  " ref="formContainer">
       <div class="flex flex-col gap-5 p-8 justify-center self-center  py-5 w-full">
         <h1 class="w-full font-regular text-md">Has seleccionado el libro:</h1>
         <p class="font-serif font-bold text-2xl"> {{ selectedBook.volumeInfo.title }}</p>
@@ -34,11 +34,11 @@
             />
         
       </div>
-      <div class="text-left flex flex-col gap-5 justify-center items-center w-full p-6">
+      <div class="text-left flex flex-col gap-5 justify-center items-center w-full p-6 ">
         <input name="username" type="text" class="border-2 w-full py-3 px-5 rounded-full focus:border-[#007B7F]" placeholder="Escribe tu nombre" v-model="userName">
         <input name="email" type="email" class="border-2 py-3 w-full px-5 rounded-full" placeholder="Email" v-model="email">
         <input name="location" type="text" class="border-2 py-3 px-5 rounded-full w-full" placeholder="Ubicación" v-model="location">
-        <button @click="registerBook" class="bg-[#207581] rounded-[2rem] text-white w-full py-3 hover:bg-[#115D67] px-5">Registrar</button>
+        <button @click="registerBook" class="bg-[#4E989F] rounded-[2rem] text-white w-full py-3 hover:bg-[#207581] px-5">Registrar</button>
       <div> <ul class="text-center text-[0.8rem] text-[#FF0000]" v-if="errors.length">
       <li v-for="error in errors">{{ error }}</li>
     </ul>
@@ -52,7 +52,7 @@
    
 
     <div >
-        <ApiBookCard class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-10" @bookselected="saveIsbnBook" :books="books"></ApiBookCard>
+        <ApiBookCard class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-10 bg-[#FBFBFB]" @bookselected="saveIsbnBook" :books="books"></ApiBookCard>
        
     </div>
 
@@ -66,7 +66,7 @@
           <button @click="sliderFocus" class= "text-primary border-2 border-[#207581] py-2 px-8 rounded-full hover:bg-[#207581] hover:text-[white]">➕ Añadir otro libro</button>
       </div>
     </div>
-      <img class="w-full" src="../images/happy-man-with-book-in-his-hand.svg" alt="Hombre feliz con libro en su mano" />
+      <img class="w-full pb-32" src="../images/share-your-books-ilustration.svg" alt="Hombre feliz con libro en su mano" />
    
    </div>
 

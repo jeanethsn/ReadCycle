@@ -1,6 +1,6 @@
 <template>
 
-<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-72 px-5 md:p-[12rem] w-full h-full gap-5">
+<div ref="sliderContainer" class="flex flex-col justify-center items-center bg-[#FBFBFB] py-[205px] px-5 w-full h-full gap-5">
     <h3 class="text-[1.3rem] text-[#EB562B] tracking-[0.5rem] leading-[3rem] font-semibold font-serif md:text-[1.3rem] md:p-8 lg:text-[1.5rem] lg:p-5" for="keyword">BUSCA TU LIBRO</h3>
    <div
         id="buscador_top"
@@ -22,7 +22,7 @@
   </div>
  
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 p-10 bg-[#FBFBFB]">
         <BookCard
           v-for="book in books"
           :key="book.isbn"
@@ -32,7 +32,7 @@
 
       
      
-      <div class="grid grid-cols-1 md:grid-cols-2  w-full text-left  items-center justify-left md:-mt-28 p-8 md:px-32" v-if="msj == true">
+      <div class="grid grid-cols-1 md:grid-cols-2  w-full text-left  items-center justify-left md:-mt-28 p-8 md:px-32 md-py-30 bg-[#FBFBFB]" v-if="msj == true">
       
       <div class="flex flex-col gap-8 ">
       <h3  class="font-serif text-[2rem] w-full text-left font-bold md:text-[2.5rem] "> No se encontraron libros </h3>
@@ -41,7 +41,7 @@
           <button @click="searchFocus" class= "text-primary border-2 border-[#207581] py-2 px-8 rounded-full hover:bg-[#207581] hover:text-[white]">🔎 Buscar otro libro</button>
       </div>
     </div>
-      <img class="w-full" src="../images/woman-searching-for-books.svg" alt="Hombre feliz con libro en su mano" />
+      <img class="w-full scale-x-[-1] pb-32" src="../images/woman.png" alt="Hombre feliz con libro en su mano" />
    
    </div>
    <div ref="bookPublish" >
